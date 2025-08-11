@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int arr[13] = {1,2,3,4,4,5,5,5,5,5,6,6,7};
+    int n = 13;
+
+    int j = 0; 
+    for (int i = 0; i < n - 1; i++) {
+        if (arr[i] != arr[i + 1]) {
+            arr[j] = arr[i];
+            j++;
+        }
+    
+    }
+    arr[j] = arr[n - 1];
+    j++;
+    for (int i = 0; i < j; i++) {
+        cout << arr[i] << " ";
+    }
+
+    return 0;
+}
+
+            
+            
+                      
+                      
